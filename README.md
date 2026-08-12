@@ -58,6 +58,19 @@ The models are also compared based on their accuracy scores to identify the best
 ## 🎯 Best Model
 
 Among the tested models, **Gradient Boosting** achieved the highest accuracy with approximately **82.12%** on the test set.
+## 🎯 Model Results
+
+| Model                 |   Accuracy |
+| --------------------- | ---------: |
+| Logistic Regression   |     78.77% |
+| Decision Tree         |     79.89% |
+| Random Forest         |     78.21% |
+| XGBoost               |     81.01% |
+| SVM                   |     79.89% |
+| **Gradient Boosting** | **82.12%** |
+
+**Gradient Boosting** achieved the highest accuracy among the tested models with an accuracy of **82.12%** on the test set.
+
 
 ## 👩‍💻 Author
 
