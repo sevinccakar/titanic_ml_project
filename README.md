@@ -71,6 +71,19 @@ Among the tested models, **Gradient Boosting** achieved the highest accuracy wit
 
 **Gradient Boosting** achieved the highest accuracy among the tested models with an accuracy of **82.12%** on the test set.
 
+## 📊 Data Analysis
+
+### Survival Distribution
+
+![Survival Distribution](survival_distribution.png)
+
+### Correlation Matrix
+
+![Correlation Matrix](correlation_matrix.png)
+
+## 📈 Model Comparison
+
+![Model Comparison](model_comparison.png)
 
 ## 👩‍💻 Author
 
