@@ -1,51 +1,66 @@
-# 🤖 Machine Learning Project
+# 🚢 Titanic Machine Learning Project
 
-This project focuses on applying fundamental **Machine Learning** concepts and building predictive models using Python.
+This project applies a complete **Machine Learning workflow** to the Titanic dataset, from data extraction and preprocessing to model training, evaluation, comparison, and prediction.
 
 ## 📌 About the Project
 
-The project covers the main steps of a Machine Learning workflow, including data preprocessing, model training, evaluation, and model comparison.
+The Titanic dataset is stored in **SQL Server** and retrieved using SQLAlchemy. The data is then cleaned and prepared using Python before training multiple classification models.
 
-## 🧠 Models Used
+The project includes:
 
+* Data extraction from SQL Server
+* Data cleaning and missing value handling
+* Feature engineering
+* Categorical variable encoding
+* Data visualization and correlation analysis
+* Training and comparison of multiple ML models
+* Model performance evaluation
+* Prediction for new passengers
+
+## 🧠 Machine Learning Models
+
+* Logistic Regression
 * Decision Tree
 * Random Forest
 * XGBoost
-* CatBoost
+* Support Vector Machine (SVM)
+* Gradient Boosting
 
-## 🔧 Technologies
+## 🛠️ Technologies & Libraries
 
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* Matplotlib
-* XGBoost
-* CatBoost
+* **Python**
+* **SQL Server**
+* **SQLAlchemy**
+* **Pandas**
+* **NumPy**
+* **Scikit-learn**
+* **XGBoost**
+* **Matplotlib**
+* **Seaborn**
 
 ## 📊 Model Evaluation
 
-The models are evaluated using:
+Models are evaluated using:
 
 * Accuracy
 * Precision
 * Recall
 * F1 Score
 * Confusion Matrix
-* Cross Validation
+* Classification Report
+
+The models are also compared based on their accuracy scores to identify the best-performing model.
 
 ## 🔄 Workflow
 
-**Data → Preprocessing → Model Training → Cross Validation → Evaluation → Model Comparison**
+**SQL Server → Data Extraction → Data Preprocessing → Feature Engineering → Model Training → Model Evaluation → Model Comparison → Prediction**
 
-## 🎯 Goal
+## 🎯 Best Model
 
-The main goal of this project is to gain practical experience with different Machine Learning algorithms and compare their performance to identify the most suitable model.
+Among the tested models, **Gradient Boosting** achieved the highest accuracy with approximately **82.12%** on the test set.
 
 ## 👩‍💻 Author
 
 **Sevinç Çakar**
 Management Information Systems Student
 Interested in **Data Analytics, Artificial Intelligence & Machine Learning**.
-
-
