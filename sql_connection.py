@@ -121,43 +121,44 @@ print("Accuracy:", accuracy_score(y_test, y_pred_gb))
 print("\nConfusion Matrix:\n", confusion_matrix(y_test, y_pred_gb))
 print("\nClassification Report:\n", classification_report(y_test, y_pred_gb))
 
-# 1) Survived dağılımı
+# 1) Survival Distribution
 plt.figure(figsize=(5,4))
 sns.countplot(x="Survived", data=df)
 plt.title("Hayatta Kalma Dağılımı")
-#plt.show
+plt.show
 
-# 2) Pclass'a göre hayatta kalma oranı
+# 2) Survival Rate by Passenger Class
 plt.figure(figsize=(5,4))
 sns.barplot(x="Pclass", y="Survived", data=df)
 plt.title("Sınıfa (Pclass) Göre Hayatta Kalma Oranı")
-#plt.show()
+plt.show()
 
-# 3) Cinsiyete göre hayatta kalma oranı
+# 3) Survival Rate by Gender
 plt.figure(figsize=(5,4))
 sns.barplot(x="Sex", y="Survived", data=df)
 plt.title("Cinsiyete Göre Hayatta Kalma Oranı (0=Erkek, 1=Kadın)")
-#plt.show()
+plt.show()
 
-# 4) Age dağılımı
+# 4) Age Distribution
 plt.figure(figsize=(6,4))
 sns.histplot(df["Age"], bins=30, kde=True)
 plt.title("Yaş Dağılımı")
-#plt.show()
+plt.show()
 
-# 5) Fare dağılımı
+# 5) Fare Distribution
 plt.figure(figsize=(6,4))
 sns.histplot(df["Fare"], bins=30, kde=True)
 plt.title("Bilet Ücreti (Fare) Dağılımı")
-#plt.show()
+plt.show()
 
+# 6) Correlation Matrix
 plt.figure(figsize=(10, 8))
 corr = df.corr()
 sns.heatmap(corr, annot=True, fmt=".2f", cmap="coolwarm")
 plt.title("Korelasyon Matrisi")
-#plt.show()
+plt.show()
 
-
+# 7) Model Comparison
 model_names = [
     "Logistic Regression",
     "Decision Tree",
@@ -172,7 +173,7 @@ plt.ylim(0.75, 0.83)
 plt.ylabel("Accuracy")
 plt.title("Model Comparison")
 plt.xticks(rotation=30)
-#plt.show()
+plt.show()
 
 models = {
     "Logistic Regression": y_pred,
@@ -215,7 +216,7 @@ plt.title("Model Accuracy Comparison")
 plt.ylim(0.75,0.83)
 plt.xticks(rotation=30)
 
-#plt.show()
+plt.show()
 
 best_model = gb_model
 print(x_train.columns)
